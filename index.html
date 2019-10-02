@@ -45,6 +45,19 @@
         margin-top: 20px;
         margin-bottom: 20px;
       }
+      .cheatsheet-link {
+        font-weight: 600;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      .repo-title {
+        min-height: 50px;
+      }
+      .repo-desc {
+        min-height: 50px;
+      }
     </style>
   </head>
   <body>
@@ -87,8 +100,6 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <!-- <hr /> -->
-
             <h3
               style="    background-color: #fbdb76;
             padding: 8px;     width: fit-content;"
@@ -166,6 +177,40 @@
 
             <h3
               style="    background-color: #fbdb76;
+        padding: 8px;     width: fit-content;"
+              class="my-2 mt-4 "
+            >
+              Cheatsheets
+            </h3>
+
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  <a
+                    class="cheatsheet-link"
+                    href="https://github.com/joeyscarim/react-native-cheatsheet"
+                    >react / react-native-cheatsheet</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="cheatsheet-link"
+                    href="https://github.com/joeyscarim/wordpress-cheatsheet"
+                    >wordpress-cheatsheet</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="cheatsheet-link"
+                    href="https://github.com/joeyscarim/aws-cheatsheet"
+                    >aws-cheatsheet</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <h3
+              style="    background-color: #fbdb76;
           padding: 8px;     width: fit-content;"
               class="my-2 mt-4 "
             >
@@ -175,7 +220,28 @@
             <div class="row">
               <div class="col-md-3">
                 <div class="package-container">
-                  <p><strong>wp-persistent-query-strings</strong></p>
+                  <p class="repo-title">
+                    <strong>react-native-webview-video-embed-example</strong>
+                  </p>
+                  <p style="font-size: 13px">
+                    An example RN app with iOS + Android embedded videos
+                  </p>
+                  <p style="font-size: 13px">
+                    JavaScript /
+                    <a
+                      href="https://github.com/joeyscarim/react-native-webview-video-embed-example"
+                      target="_blank"
+                      >View on Github</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="package-container">
+                  <p class="repo-title">
+                    <strong>wp-persistent-query-strings</strong>
+                  </p>
                   <p style="font-size: 13px">
                     Barebones Wordpress plugin for setting persistent query
                     strings that can be displayed and used in links via
@@ -194,15 +260,14 @@
 
               <div class="col-md-3">
                 <div class="package-container">
-                  <p><strong>react-native-linking-contact</strong></p>
+                  <p class="repo-title"><strong>boilerstrap</strong></p>
                   <p style="font-size: 13px">
-                    A React Native module for easily linking call, email, and
-                    sms strings on the iOS and Android platforms.
+                    Bootstrap 4 CDN boilerplate w/ sample code blocks
                   </p>
                   <p style="font-size: 13px">
-                    JavaScript /
+                    HTML /
                     <a
-                      href="https://github.com/joeyscarim/react-native-linking-contact"
+                      href="https://github.com/joeyscarim/boilerstrap"
                       target="_blank"
                       >View on Github</a
                     >
@@ -224,7 +289,7 @@
           Joey Scarim. 2019.
         </p>
         <p>
-          Built with ❤️ + 232 lines of HTML, CSS, & Bootstrap 4.
+          Built with ❤️ + 297 lines of HTML, CSS, & Bootstrap 4.
         </p>
       </div>
     </footer>
