@@ -28,6 +28,11 @@
     ></script>
 
     <style>
+      h2{
+        font-size: 2rem;
+    color: #2d3436;
+    font-weight: 200;
+      }
       footer {
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -58,32 +63,48 @@
       .repo-desc {
         min-height: 50px;
       }
+      .app-icon {
+        border-radius: 22%;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 30px;
+        /* margin-bottom: 30px; */
+        margin-bottom: 8px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-md-6 mx-auto mt-5 mb-4">
-          <h2 class="">Hey, I'm Joey 👋 I make apps.</h2>
+          <h2 class="color: #2d3436">Hey, I'm Joey 👋 I make apps.</h2>
           <h6
             style="    background-color: #fbdb76;
-          padding: 10px;"
+          padding: 10px; font-weight: 400;
+    color: #2d3436;"
             class="my-4 text-center"
           >
             JOEY SCARIM /
             <!-- <span style="color: #6c757d;">/</span>  -->
             WEB & MOBILE APP DEVELOPER / DENVER, CO
           </h6>
-          <p class="text-justify text-secondary" style="line-height: 28px;">
+          <p class="text-justify text-secondary" style="line-height: 28px; font-weight: 300;">
             I work primarily with
-            <strong>JavaScript (React Native, React, Ionic, Angular)</strong>,
-            <strong>PHP (Laravel, Wordpress)</strong>, and
-            <strong>HTML/CSS (Bootstrap, Flexbox)</strong>. I studied Computer
+            <ul style="    font-weight: 300;">
+              <li>JavaScript (React Native, React, Ionic, Angular),</li>
+              <li>PHP (Laravel, Wordpress), and</li>
+              <li>HTML/CSS (Bootstrap, Flexbox).</li>
+            </ul>
+          </p>
+          <p class="text-justify text-secondary" style="line-height: 28px; font-weight: 300;">
+           I studied Computer
             Science at the University of Arizona and work remotely for
             Arizona-based SaaS company
             <a href="http://leadlinellc.com" target="_blank">LeadLine, LLC.</a>
-            We make CRM and lead generation systems to help marketers and small
-            businesses increase their response times and sales.
+            We make LMS, CRM, and lead generation systems to help marketers and small
+            businesses train their teams, increase their response times, and close more sales.
           </p>
           <p class="mt-4">
             <a href="https://github.com/joeyscarim" target="_blank"
@@ -96,24 +117,38 @@
         </div>
       </div>
     </div>
-    <section class="bg-light">
-      <div class="container">
+
+    <!-- Current Projects -->
+    <section class="bg-dark" style="background-image: url(assets/background.jpg);
+    background-position: center;
+   
+    background-size: cover; position: relative;">
+
+    <div style="    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    height: 100%;
+    width: 100%;"></div>
+      
+      <div class="container" style="    padding: 30px 0px;">
         <div class="row">
           <div class="col-md-12">
-            <h3
+            <h6
               style="    background-color: #fbdb76;
-            padding: 8px;     width: fit-content;"
+            padding: 10px;     width: fit-content; font-weight: 400;"
               class="my-2 mt-4 "
             >
-              Current Projects
+              CURRENT PROJECTS
             </h3>
 
             <div class="row">
               <div class="col-md-3">
-                <img src="assets/leadowl.png" class="img-fluid px-5" />
-                <p class="text-center  mb-0"><strong>Leadowl</strong></p>
-                <p class="text-center mb-1">React Native, Laravel</p>
-                <p class="text-center" style="font-size:12px">
+                <img
+                  src="assets/icons/leadowl.png"
+                  class="img-fluid app-icon"
+                />
+                <p class="text-center text-white">LeadOwl</p>
+                <p class="text-center text-white mb-1">React Native, Laravel</p>
+                <p class="text-center text-white" style="font-size:12px">
                   <a
                     href="https://itunes.apple.com/us/app/leadowl/id1281087717?mt=8"
                     target="_blank"
@@ -130,12 +165,13 @@
                 </p>
               </div>
               <div class="col-md-3">
-                <img src="assets/run.png" class="img-fluid px-5" />
-                <p class="text-center mb-0">
-                  <strong>Rank Up Now</strong>
-                </p>
-                <p class="text-center mb-1">React Native, Laravel</p>
-                <p class="text-center" style="font-size:12px">
+                <img
+                  src="assets/icons/businessglu.png"
+                  class="img-fluid app-icon"
+                />
+                <p class="text-center text-white">Glu</p>
+                <p class="text-center text-white mb-1">React Native, Laravel</p>
+                <p class="text-center text-white" style="font-size:12px">
                   <a
                     href="https://itunes.apple.com/us/app/run-rank-up-now/id1442150223?mt=8"
                     target="_blank"
@@ -148,16 +184,39 @@
                     >ANDROID</a
                   >
                   /
-                  <a href="https://rankupnow.com" target="_blank">WEB</a>
+                  <a href="https://businessglu.com" target="_blank">WEB</a>
                 </p>
               </div>
               <div class="col-md-3">
-                <img src="assets/osp.png" class="img-fluid px-5" />
-                <p class="text-center mb-0">
-                  <strong>Online Sales Pro</strong>
+                <img
+                  src="assets/icons/knowledgely.png"
+                  class="img-fluid app-icon"
+                />
+                <p class="text-center text-white">Knowledge.ly</p>
+                <p class="text-center text-white mb-1">Ionic, LAMP</p>
+                <p class="text-center text-white" style="font-size:12px">
+                  <a
+                    href="https://itunes.apple.com/us/app/online-sales-pro/id931646630?mt=8"
+                    target="_blank"
+                    >IOS</a
+                  >
+                  /
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.onlinesalespro.OSP&hl=en_US"
+                    target="_blank"
+                    >ANDROID</a
+                  >
+                  /
+                  <a href="https://onlinesalespro.com" target="_blank">WEB</a>
                 </p>
-                <p class="text-center mb-1">Ionic, LAMP</p>
-                <p class="text-center" style="font-size:12px">
+              </div>
+
+              <div class="col-md-3">
+                <img src="assets/icons/osp.png" class="img-fluid app-icon" />
+                <p class="text-center text-white">OSP</p>
+
+                <p class="text-center text-white mb-1">Ionic, LAMP</p>
+                <p class="text-center text-white" style="font-size:12px">
                   <a
                     href="https://itunes.apple.com/us/app/online-sales-pro/id931646630?mt=8"
                     target="_blank"
@@ -175,13 +234,25 @@
               </div>
             </div>
 
+          </div>
+        </div>
+      </div>
+    </div>
+      </section>
+
+
+            <section class="bg-light">
+              <div class="container">
+                <div class="row">
+
             <h3
               style="    background-color: #fbdb76;
         padding: 8px;     width: fit-content;"
               class="my-2 mt-4 "
             >
-              Cheatsheets
+              Cheatsheets & Packages
             </h3>
+          </div>
 
             <div class="row">
               <div class="col-md-12">
