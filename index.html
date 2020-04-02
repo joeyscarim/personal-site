@@ -23,8 +23,16 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
+      html,
+      body {
+        font-family: 'Heebo', sans-serif;
+      }
       h2 {
         font-size: 2rem;
         color: #2d3436;
@@ -44,6 +52,14 @@
 
       footer p {
         margin-bottom: 0.25rem;
+      }
+
+      .standard-p {
+        font-weight: 300;
+        font-family: 'Heebo', sans-serif;
+
+        color: #6c757d !important;
+        line-height: 28px;
       }
 
       .header-tab {
@@ -82,7 +98,7 @@
           </p>
 
           <ul
-            style="    font-weight: 300;     font-weight: 300;
+            style="    font-weight: 300;    
       
             color: #6c757d!important;
             line-height: 28px;"
@@ -105,13 +121,13 @@
             small businesses train their teams, increase their response times,
             and close more sales.
           </p>
-          <p class="mt-4">
+          <p class="mt-4 standard-p">
             <a href="https://github.com/joeyscarim" target="_blank"
               >Visit me on Github</a
             >
             /
             <a href="/resume_joey_scarim.pdf" target="_blank">View my resume</a>
-            / joeyscarim@gmail.com
+            / <strong>joeyscarim@gmail.com</strong>
           </p>
         </div>
       </div>
@@ -143,7 +159,9 @@
           <div class="col-md-3">
             <img src="assets/icons/leadowl.png" class="img-fluid app-icon" />
             <p class="text-center text-white">LeadOwl</p>
-            <p class="text-center text-white mb-1">React Native, Laravel</p>
+            <p class="text-center text-white mb-1" style="font-weight: 200">
+              React Native, Laravel
+            </p>
             <p class="text-center text-white" style="font-size:12px">
               <a
                 href="https://itunes.apple.com/us/app/leadowl/id1281087717?mt=8"
@@ -166,7 +184,9 @@
               class="img-fluid app-icon"
             />
             <p class="text-center text-white">Glu</p>
-            <p class="text-center text-white mb-1">React Native, Laravel</p>
+            <p class="text-center text-white mb-1" style="font-weight: 200">
+              React Native, Laravel
+            </p>
             <p class="text-center text-white" style="font-size:12px">
               <a
                 href="https://apps.apple.com/us/app/business-glu/id1465014531"
@@ -190,7 +210,9 @@
             />
             <p class="text-center text-white">Knowledge.ly</p>
 
-            <p class="text-center text-white mb-1">React Native</p>
+            <p class="text-center text-white mb-1" style="font-weight: 200">
+              React Native
+            </p>
             <p class="text-center text-white" style="font-size:12px">
               <a
                 href="https://apps.apple.com/us/app/knowledge-ly/id1481995937?ls=1"
@@ -210,7 +232,9 @@
             <img src="assets/icons/osp.png" class="img-fluid app-icon" />
             <p class="text-center text-white">OSP</p>
 
-            <p class="text-center text-white mb-1">Ionic, LAMP</p>
+            <p class="text-center text-white mb-1" style="font-weight: 200">
+              Ionic, LAMP
+            </p>
             <p class="text-center text-white" style="font-size:12px">
               <a
                 href="https://itunes.apple.com/us/app/online-sales-pro/id931646630?mt=8"
@@ -241,20 +265,22 @@
 
         <div class="row">
           <div class="col-md-12">
-            <div style="margin-bottom: 30px; margin-top: 50px">
-              <p>
+            <div style="margin-bottom: 30px; margin-top: 30px">
+              <p class="standard-p">
                 <strong>React Native Cheatsheet</strong>
                 <br />
                 My personal notes for creating a mobile app with React Native
                 <br />
-                <a href="https://github.com/joeyscarim/react-native-cheatsheet"
+                <a
+                  style="margin-top: 30px"
+                  href="https://github.com/joeyscarim/react-native-cheatsheet"
                   >View on Github</a
                 >
               </p>
             </div>
 
             <div style="margin-bottom: 30px">
-              <p>
+              <p class="standard-p">
                 <strong>Wordpress Cheatsheet</strong>
                 <br />
                 My personal notes for creating wordpress servers, themes, and
@@ -267,7 +293,7 @@
             </div>
 
             <div style="margin-bottom: 30px">
-              <p>
+              <p class="standard-p">
                 <strong>AWS Cheatsheet</strong>
                 <br />
                 My personal notes for working with AWS
@@ -279,7 +305,7 @@
             </div>
 
             <div style="margin-bottom: 30px">
-              <p>
+              <p class="standard-p">
                 <strong>Boilerstrap</strong>
                 <br />
                 Bootstrap 4 CDN boilerplate w/ sample code blocks
@@ -295,14 +321,14 @@
     </section>
     <footer class="text-muted">
       <div class="container">
-        <p class="float-right">
+        <p class="float-right standard-p">
           <a href="https://github.com/joeyscarim" target="_blank">Github</a> /
           <a href="resume_joey_scarim.pdf" target="_blank">Resume</a> / 👋
         </p>
-        <p>
+        <p class="standard-p">
           Joey Scarim. 2020.
         </p>
-        <p class="d-none d-lg-block pb-1">
+        <p class="d-none d-lg-block pb-1 standard-p">
           Built with ❤️ + 311 lines of HTML, CSS, & Bootstrap 4.
         </p>
       </div>
