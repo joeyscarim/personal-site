@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta -->
     <title>Joey Scarim</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CDN -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
     <script
@@ -28,14 +25,17 @@
     ></script>
 
     <style>
-      h2{
+      h2 {
         font-size: 2rem;
-    color: #2d3436;
-    font-weight: 200;
+        color: #2d3436;
+        font-weight: 200;
       }
       a {
         color: #03b9f2;
         font-weight: 400;
+      }
+      a:hover {
+        color: #03b9f2;
       }
       footer {
         padding-top: 3rem;
@@ -46,27 +46,14 @@
         margin-bottom: 0.25rem;
       }
 
-      .package-container {
-        border: 1px solid #cacaca;
-        border-radius: 5px;
-        margin: 5px;
-        padding: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-      .cheatsheet-link {
-        font-weight: 600;
-        font-size: 20px;
-        margin-left: 10px;
-        margin-top: 10px;
+      .header-tab {
+        background-color: #03b9f2;
+        padding: 10px;
+        font-weight: 400;
+        color: #fff;
+        z-index: 50;
       }
 
-      .repo-title {
-        min-height: 50px;
-      }
-      .repo-desc {
-        min-height: 50px;
-      }
       .app-icon {
         border-radius: 22%;
         width: 150px;
@@ -74,7 +61,6 @@
         margin-right: auto;
         display: block;
         margin-top: 30px;
-        /* margin-bottom: 30px; */
         margin-bottom: 8px;
       }
     </style>
@@ -83,35 +69,41 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 mx-auto mt-5 mb-4">
-          <h2 class="color: #2d3436">Hey, I'm Joey 👋 I make apps.</h2>
-          <h6
-            style="    background-color: #03b9f2;;
-          padding: 10px; font-weight: 400;
-    color: #fff;"
-            class="my-4 text-center"
-          >
-            Joey Scarim / 
-            <!-- <span style="color: #6c757d;">/</span>  -->
-            Web & Mobile App Developer / Denver, CO
+          <h2>Hey, I'm Joey 👋 I make apps.</h2>
+          <h6 class="my-4 text-center header-tab">
+            Joey Scarim / Web & Mobile App Developer / Denver, CO
           </h6>
-          <p class="text-justify text-secondary" style="line-height: 28px; font-weight: 300;">
+          <my-tag></my-tag>
+          <p
+            class="text-justify text-secondary"
+            style="line-height: 28px; font-weight: 300;"
+          >
             I work primarily with:
-            <ul style="    font-weight: 300;     font-weight: 300;
-            color: red;
-            color: #6c757d!important;
-            line-height: 28px;">
-              <li><strong>JavaScript</strong> (React Native, React, Ionic, Angular),</li>
-              <li><strong>PHP</strong> (Laravel, Wordpress), and</li>
-              <li><strong>HTML/CSS</strong> (Bootstrap, Flexbox).</li>
-            </ul>
           </p>
-          <p class="text-justify text-secondary" style="line-height: 28px; font-weight: 300;">
-           I studied Computer
-            Science at the University of Arizona and work remotely for
-            Arizona-based SaaS company
+
+          <ul
+            style="    font-weight: 300;     font-weight: 300;
+      
+            color: #6c757d!important;
+            line-height: 28px;"
+          >
+            <li>
+              <strong>JavaScript</strong> (React Native, React, Ionic, Angular),
+            </li>
+            <li><strong>PHP</strong> (Laravel, Wordpress), and</li>
+            <li><strong>HTML/CSS</strong> (Bootstrap, Flexbox).</li>
+          </ul>
+          <!-- </p> -->
+          <p
+            class="text-justify text-secondary"
+            style="line-height: 28px; font-weight: 300;"
+          >
+            I studied Computer Science at the University of Arizona and work
+            remotely for Arizona-based SaaS company
             <a href="http://leadlinellc.com" target="_blank">LeadLine, LLC.</a>
-            We make LMS, CRM, and lead generation systems to help marketers and small
-            businesses train their teams, increase their response times, and close more sales.
+            We make LMS, CRM, and lead generation systems to help marketers and
+            small businesses train their teams, increase their response times,
+            and close more sales.
           </p>
           <p class="mt-4">
             <a href="https://github.com/joeyscarim" target="_blank"
@@ -126,195 +118,176 @@
     </div>
 
     <!-- Current Projects -->
-    <section class="bg-dark" style="background-image: url(assets/background.jpg);
+    <section
+      class="bg-dark"
+      style="background-image: url(assets/background.jpg);
     background-position: center;
    
-    background-size: cover; position: relative;">
-
-    <div style="    background-color: rgba(0,0,0,.8);
+    background-size: cover; position: relative;"
+    >
+      <div
+        style="    background-color: rgba(0,0,0,.8);
     position: absolute;
     height: 100%;
-    width: 100%;"></div>
-      
-      <div class="container" style="    padding: 30px 0px;">
+    width: 100%;"
+      ></div>
+
+      <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <h6
-              style="    background-color: #03b9f2;
-            padding: 10px;     width: fit-content; font-weight: 400; color: #fff"
-              class="my-2 mt-4 "
-            >
-              Current Projects
-            </h6>
+          <h6 class="my-2 mt-4 header-tab">
+            Current Projects
+          </h6>
+        </div>
 
-            <div class="row">
-              <div class="col-md-3">
-                <img
-                  src="assets/icons/leadowl.png"
-                  class="img-fluid app-icon"
-                />
-                <p class="text-center text-white">LeadOwl</p>
-                <p class="text-center text-white mb-1">React Native, Laravel</p>
-                <p class="text-center text-white" style="font-size:12px">
-                  <a
-                    href="https://itunes.apple.com/us/app/leadowl/id1281087717?mt=8"
-                    target="_blank"
-                    >IOS</a
-                  >
-                  /
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.leadlinepro.leadowl&hl=en"
-                    target="_blank"
-                    >ANDROID</a
-                  >
-                  /
-                  <a href="https://leadowl.com" target="_blank">WEB</a>
-                </p>
-              </div>
-              <div class="col-md-3">
-                <img
-                  src="assets/icons/businessglu.png"
-                  class="img-fluid app-icon"
-                />
-                <p class="text-center text-white">Glu</p>
-                <p class="text-center text-white mb-1">React Native, Laravel</p>
-                <p class="text-center text-white" style="font-size:12px">
-                  <a
-                    href="https://itunes.apple.com/us/app/run-rank-up-now/id1442150223?mt=8"
-                    target="_blank"
-                    >IOS</a
-                  >
-                  /
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.runapp&hl=en"
-                    target="_blank"
-                    >ANDROID</a
-                  >
-                  /
-                  <a href="https://businessglu.com" target="_blank">WEB</a>
-                </p>
-              </div>
-              <div class="col-md-3">
-                <img
-                  src="assets/icons/knowledgely.png"
-                  class="img-fluid app-icon"
-                />
-                <p class="text-center text-white">Knowledge.ly</p>
-                <p class="text-center text-white mb-1">React Native</p>
-                <p class="text-center text-white" style="font-size:12px">
-                  <a
-                    href="https://itunes.apple.com/us/app/online-sales-pro/id931646630?mt=8"
-                    target="_blank"
-                    >IOS</a
-                  >
-                  /
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.onlinesalespro.OSP&hl=en_US"
-                    target="_blank"
-                    >ANDROID</a
-                  >
-                  
-                </p>
-              </div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="assets/icons/leadowl.png" class="img-fluid app-icon" />
+            <p class="text-center text-white">LeadOwl</p>
+            <p class="text-center text-white mb-1">React Native, Laravel</p>
+            <p class="text-center text-white" style="font-size:12px">
+              <a
+                href="https://itunes.apple.com/us/app/leadowl/id1281087717?mt=8"
+                target="_blank"
+                >IOS</a
+              >
+              /
+              <a
+                href="https://play.google.com/store/apps/details?id=com.leadlinepro.leadowl&hl=en"
+                target="_blank"
+                >ANDROID</a
+              >
+              /
+              <a href="https://leadowl.com" target="_blank">WEB</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="assets/icons/businessglu.png"
+              class="img-fluid app-icon"
+            />
+            <p class="text-center text-white">Glu</p>
+            <p class="text-center text-white mb-1">React Native, Laravel</p>
+            <p class="text-center text-white" style="font-size:12px">
+              <a
+                href="https://itunes.apple.com/us/app/run-rank-up-now/id1442150223?mt=8"
+                target="_blank"
+                >IOS</a
+              >
+              /
+              <a
+                href="https://play.google.com/store/apps/details?id=com.runapp&hl=en"
+                target="_blank"
+                >ANDROID</a
+              >
+              /
+              <a href="https://businessglu.com" target="_blank">WEB</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <img
+              src="assets/icons/knowledgely.png"
+              class="img-fluid app-icon"
+            />
+            <p class="text-center text-white">Knowledge.ly</p>
+            <p class="text-center text-white mb-1">React Native</p>
+            <p class="text-center text-white" style="font-size:12px">
+              <a
+                href="https://itunes.apple.com/us/app/online-sales-pro/id931646630?mt=8"
+                target="_blank"
+                >IOS</a
+              >
+              /
+              <a
+                href="https://play.google.com/store/apps/details?id=com.onlinesalespro.OSP&hl=en_US"
+                target="_blank"
+                >ANDROID</a
+              >
+            </p>
+          </div>
 
-              <div class="col-md-3">
-                <img src="assets/icons/osp.png" class="img-fluid app-icon" />
-                <p class="text-center text-white">OSP</p>
+          <div class="col-md-3">
+            <img src="assets/icons/osp.png" class="img-fluid app-icon" />
+            <p class="text-center text-white">OSP</p>
 
-                <p class="text-center text-white mb-1">Ionic, LAMP</p>
-                <p class="text-center text-white" style="font-size:12px">
-                  <a
-                    href="https://itunes.apple.com/us/app/online-sales-pro/id931646630?mt=8"
-                    target="_blank"
-                    >IOS</a
-                  >
-                  /
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.onlinesalespro.OSP&hl=en_US"
-                    target="_blank"
-                    >ANDROID</a
-                  >
-                  /
-                  <a href="https://onlinesalespro.com" target="_blank">WEB</a>
-                </p>
-              </div>
-            </div>
-
+            <p class="text-center text-white mb-1">Ionic, LAMP</p>
+            <p class="text-center text-white" style="font-size:12px">
+              <a
+                href="https://itunes.apple.com/us/app/online-sales-pro/id931646630?mt=8"
+                target="_blank"
+                >IOS</a
+              >
+              /
+              <a
+                href="https://play.google.com/store/apps/details?id=com.onlinesalespro.OSP&hl=en_US"
+                target="_blank"
+                >ANDROID</a
+              >
+              /
+              <a href="https://onlinesalespro.com" target="_blank">WEB</a>
+            </p>
           </div>
         </div>
       </div>
-    </div>
-      </section>
+    </section>
 
+    <section class="bg-light">
+      <div class="container">
+        <div class="row">
+          <h6 class="my-2 mt-4 header-tab">
+            Cheatsheets & Boilerplates
+          </h6>
+        </div>
 
-            <section class="bg-light">
-              <div class="container" style="    padding: 30px 15px;">
-                <div class="row">
-
-                  <h6
-                  style="    background-color: #03b9f2;
-                padding: 10px;     width: fit-content; font-weight: 400; color: #fff"
-                  class="my-2 mt-4 "
+        <div class="row">
+          <div class="col-md-12">
+            <div style="margin-bottom: 30px; margin-top: 50px">
+              <p>
+                <strong>React Native Cheatsheet</strong>
+                <br />
+                My personal notes for creating a mobile app with React Native
+                <br />
+                <a href="https://github.com/joeyscarim/react-native-cheatsheet"
+                  >View on Github</a
                 >
-                  Cheatsheets & Boilerplates
-                </h6>
-          </div>
+              </p>
+            </div>
 
-            <div class="row">
-              <div class="col-md-12">
-                <div style="margin-bottom: 30px; margin-top: 50px">
-                  <p><strong>React Native Cheatsheet</strong> 
-                    <br>
-                  My personal notes for creating a mobile app with React Native
-                  <br>
-                  <a
-                    href="https://github.com/joeyscarim/react-native-cheatsheet"
-                    >View on Github</a
-                  >
-                </p>
-                  </div>
+            <div style="margin-bottom: 30px">
+              <p>
+                <strong>Wordpress Cheatsheet</strong>
+                <br />
+                My personal notes for creating wordpress servers, themes, and
+                plugins
+                <br />
+                <a href="https://github.com/joeyscarim/wordpress-cheatsheet"
+                  >View on Github</a
+                >
+              </p>
+            </div>
 
+            <div style="margin-bottom: 30px">
+              <p>
+                <strong>AWS Cheatsheet</strong>
+                <br />
+                My personal notes for working with AWS
+                <br />
+                <a href="https://github.com/joeyscarim/aws-cheatsheet"
+                  >View on Github</a
+                >
+              </p>
+            </div>
 
-                  <div style="margin-bottom: 30px">
-                    <p><strong>Wordpress Cheatsheet</strong> 
-                      <br>
-                    My personal notes for creating wordpress servers, themes, and plugins
-                    <br>
-                    <a
-                      href="https://github.com/joeyscarim/wordpress-cheatsheet"
-                      >View on Github</a
-                    >
-                  </p>
-                    </div>
-
-                    <div style="margin-bottom: 30px">
-                      <p><strong>AWS Cheatsheet</strong> 
-                        <br>
-                      My personal notes for working with AWS
-                      <br>
-                      <a
-                        href="https://github.com/joeyscarim/aws-cheatsheet"
-                        >View on Github</a
-                      >
-                    </p>
-                      </div>
-
-                      <div style="margin-bottom: 30px">
-                        <p><strong>Boilerstrap</strong> 
-                          <br>
-                          Bootstrap 4 CDN boilerplate w/ sample code blocks
-                        <br>
-                        <a
-                          href="https://github.com/joeyscarim/boilerstrap"
-                          >View on Github</a
-                        >
-                      </p>
-                        </div>
-
-                  
-                
-
-            
+            <div style="margin-bottom: 30px">
+              <p>
+                <strong>Boilerstrap</strong>
+                <br />
+                Bootstrap 4 CDN boilerplate w/ sample code blocks
+                <br />
+                <a href="https://github.com/joeyscarim/boilerstrap"
+                  >View on Github</a
+                >
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -328,8 +301,8 @@
         <p>
           Joey Scarim. 2020.
         </p>
-        <p>
-          Built with ❤️ + 297 lines of HTML, CSS, & Bootstrap 4.
+        <p class="float-left">
+          Built with ❤️ + 307 lines of HTML, CSS, & Bootstrap 4.
         </p>
       </div>
     </footer>
