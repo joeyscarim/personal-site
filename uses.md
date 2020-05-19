@@ -1,19 +1,5 @@
-## Hardware
 
-#### Work:
-- MacBook Pro
-* Keychron K2
-- Apple Mouse
-- Autonomous Sit-Stand Desk
-- Autonomous Chair
-- LG Ultrawide
 
-#### Play:
-- iPhone XR
-- Apple TV x2
-	- Samsung TV
-	- Other TV
-- Nintendo Switch
 
 ## Software
 
